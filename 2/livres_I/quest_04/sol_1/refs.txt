@@ -1,0 +1,6 @@
+https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html
+
+"A Scanner breaks its input into tokens using a delimiter pattern, which by default matches whitespace. The resulting tokens may then be converted into values of different types using the various next methods."
+"The default whitespace delimiter used by a scanner is as recognized by Character.isWhitespace. The reset() method will reset the value of the scanner's delimiter to the default whitespace delimiter regardless of whether it was previously changed."
+
+https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isWhitespace-char-
