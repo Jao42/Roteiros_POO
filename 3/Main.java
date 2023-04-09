@@ -48,5 +48,23 @@ class Main {
     for(int i = valores.length - 1; i >= 0; i--)
       System.out.printf("%d ", valores[i]);
     System.out.println();
+
+    //questao 7
+    int[] novosValores = new int[5];
+    System.out.print("Digite os elementos do novo array: ");
+    boolean temComum = false;
+    for(int i = 1; i <= 5; i++) {
+      novosValores[i - 1] = entrada.nextInt();
+    }
+    for(int i = 0; i < valores.length; i++) {
+      for (int j = 0; j < novosValores.length; j++) {
+        if (valores[i] == novosValores[j]) {
+          temComum = true;
+          System.out.printf("O valor %d no índice %d do 1º array está no indice %d do 2º array\n", valores[i], i, j);
+        }
+      }
+    }
+    if (!temComum)
+      System.out.println("Não foram encontrados elementos em comum!");
   }
 }
